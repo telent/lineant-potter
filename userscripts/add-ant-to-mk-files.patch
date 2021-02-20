@@ -1,0 +1,24 @@
+diff --git a/BoardConfig.mk b/BoardConfig.mk
+index 85b51d8..0920f0f 100644
+--- a/BoardConfig.mk
++++ b/BoardConfig.mk
+@@ -253,3 +253,6 @@ WIFI_DRIVER_FW_PATH_AP           := "ap"
+ WIFI_DRIVER_FW_PATH_STA          := "sta"
+ WIFI_DRIVER_FW_PATH_P2P          := "p2p"
+ WPA_SUPPLICANT_VERSION           := VER_0_8_X
++
++# ANT
++BOARD_ANT_WIRELESS_DEVICE := "wcn3680"
+diff --git a/device.mk b/device.mk
+index cfec25c..811eb95 100644
+--- a/device.mk
++++ b/device.mk
+@@ -14,6 +14,8 @@
+ # See the License for the specific language governing permissions and
+ # limitations under the License.
+ 
++$(call inherit-product, external/ant-wireless/build/ant-wireless.mk)
++
+ $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
+ 
+ # Overlay
