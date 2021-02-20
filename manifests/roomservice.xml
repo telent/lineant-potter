@@ -7,54 +7,50 @@
   <project name="boulzordev/android_vendor_motorola_potter" path="vendor/motorola/potter" remote="github" revision="lineage-15.1-64" />
   <project name="boulzordev/android_kernel_motorola_msm8953" path="kernel/motorola/msm8953" remote="github" revision="lineage-15.1-64" />
   <project name="lineageos4microg/android_prebuilts_prebuiltapks" path="prebuilts/prebuiltapks" remote="github" revision="master" />
-  <!-- <project name="ant-wireless/Android_ANTRadioService" path="prebuilts/ANTRadioService" remote="github" revision="master" /> -->
-  <!-- <project name="ant-wireless/Android_ANTPlusPluginsService" path="prebuilts/ANTPlusPluginsService" remote="github" revision="master" /> -->
-  <!-- <remote name="local" fetch="file:///srv/telent/" /> -->
-  <!-- <project path="prebuilts/ANTUSBService" name="ant-usb" remote="local" revision="master" /> -->
-  <!-- <project name="ant-wireless/ANT-Android-SDKs" path="prebuilts/ant_sdk" remote="github" revision="master" > -->
-  <!--   <copyfile src="ANT_Android_SDK/Services/Android_ANTUSBService_1-4-0.apk" dest="prebuilts/ANTUSBService/Android_ANTUSBService_1-4-0.apk" /> -->
-  <!-- </project> -->
-   <remote name="github_ant-wireless"
-        fetch="git://github.com/ant-wireless"
-        />
+  <remote name="github_ant-wireless"
+          fetch="git://github.com/ant-wireless"
+          />
 
-    <project name="Android_build"
-        path="external/ant-wireless/build"
-        remote="github_ant-wireless"
-        revision="refs/heads/features/hidl-support"
-        >
-        <linkfile src="parent_Android.bp" dest="external/ant-wireless/Android.bp" />
-    </project>
+  <!-- lines following this one were added based on instructions at -->
+  <!-- https://github.com/ant-wireless/ANT_in_Android -->
 
-    <!-- this clashes with the one in lineageos -->
-    <!-- <project name="Android_antradio-library" -->
-    <!--     path="external/ant-wireless/antradio-library" -->
-    <!--     remote="github_ant-wireless" -->
-    <!--     revision="refs/heads/master" -->
-    <!--     /> -->
+  <project name="Android_build"
+           path="external/ant-wireless/build"
+           remote="github_ant-wireless"
+           revision="refs/heads/features/hidl-support"
+           >
+    <linkfile src="parent_Android.bp" dest="external/ant-wireless/Android.bp" />
+  </project>
 
-    <project name="Linux_ant-hal"
-        path="external/ant-wireless/hidl"
-        remote="github_ant-wireless"
-        revision="refs/heads/features/hidl-support"
-        />
+  <!-- this clashes with the one in lineageos -->
+  <!-- <project name="Android_antradio-library" -->
+  <!--     path="external/ant-wireless/antradio-library" -->
+  <!--     remote="github_ant-wireless" -->
+  <!--     revision="refs/heads/master" -->
+  <!--     /> -->
 
-    <project name="Android_ANTHALService"
-        path="external/ant-wireless/ANTHALService"
-        remote="github_ant-wireless"
-        revision="refs/heads/features/hidl-support"
-        />
+  <project name="Linux_ant-hal"
+           path="external/ant-wireless/hidl"
+           remote="github_ant-wireless"
+           revision="refs/heads/features/hidl-support"
+           />
 
-    <project name="Android_ANTRadioService"
-        path="external/ant-wireless/ANTRadioService"
-        remote="github_ant-wireless"
-        revision="refs/heads/master"
-        />
+  <project name="Android_ANTHALService"
+           path="external/ant-wireless/ANTHALService"
+           remote="github_ant-wireless"
+           revision="refs/heads/features/hidl-support"
+           />
 
-    <project name="Android_ANTPlusPluginsService"
-        path="external/ant-wireless/Android_ANTPlusPluginsService"
-        remote="github_ant-wireless"
-        revision="refs/heads/master"
-        />
+  <project name="Android_ANTRadioService"
+           path="external/ant-wireless/ANTRadioService"
+           remote="github_ant-wireless"
+           revision="refs/heads/master"
+           />
+
+  <project name="Android_ANTPlusPluginsService"
+           path="external/ant-wireless/Android_ANTPlusPluginsService"
+           remote="github_ant-wireless"
+           revision="refs/heads/master"
+           />
 
 </manifest>
