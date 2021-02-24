@@ -11,7 +11,6 @@ build a degoogled phone with ANT+ enabled:
 - LineageOS 15.1
 - MicroG and F-Droid
 - ANT patches and libraries
-- ANT Tester app
 
 It works on phones that originally had Nougat (7.0) - it won't work if
 your stock ROM was Oreo (8.1). The LineageOS release it's based on
