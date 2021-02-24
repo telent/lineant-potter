@@ -11,46 +11,41 @@
           fetch="git://github.com/ant-wireless"
           />
 
-  <!-- lines following this one were added based on instructions at -->
-  <!-- https://github.com/ant-wireless/ANT_in_Android -->
 
-  <project name="Android_build"
-           path="external/ant-wireless/build"
-           remote="github_ant-wireless"
-           revision="refs/heads/features/hidl-support"
-           >
-    <linkfile src="parent_Android.bp" dest="external/ant-wireless/Android.bp" />
-  </project>
+    <project name="Android_build"
+        path="external/ant-wireless/build"
+        remote="github_ant-wireless"
+        revision="refs/heads/master"
+        />
 
-  <!-- this clashes with the one in lineageos -->
-  <!-- <project name="Android_antradio-library" -->
-  <!--     path="external/ant-wireless/antradio-library" -->
-  <!--     remote="github_ant-wireless" -->
-  <!--     revision="refs/heads/master" -->
-  <!--     /> -->
+    <!-- <project name="Android_antradio-library" -->
+    <!--     path="external/ant-wireless/antradio-library" -->
+    <!--     remote="github_ant-wireless" -->
+    <!--     revision="refs/heads/master" -->
+    <!--     /> -->
 
-  <project name="Linux_ant-hal"
-           path="external/ant-wireless/hidl"
-           remote="github_ant-wireless"
-           revision="refs/heads/features/hidl-support"
-           />
+    <!-- <project name="Linux_ant-hal" -->
+    <!--     path="external/ant-wireless/ant-hal" -->
+    <!--     remote="github_ant-wireless" -->
+    <!--     revision="refs/heads/master" -->
+    <!--     /> -->
 
-  <project name="Android_ANTHALService"
-           path="external/ant-wireless/ANTHALService"
-           remote="github_ant-wireless"
-           revision="refs/heads/features/hidl-support"
-           />
+    <!-- <project name="Android_ANTHALService" -->
+    <!--     path="external/ant-wireless/ANTHALService" -->
+    <!--     remote="github_ant-wireless" -->
+    <!--     revision="refs/heads/master" -->
+    <!--     /> -->
 
-  <project name="Android_ANTRadioService"
-           path="external/ant-wireless/ANTRadioService"
-           remote="github_ant-wireless"
-           revision="refs/heads/master"
-           />
+    <project name="Android_ANTRadioService"
+        path="external/ant-wireless/ANTRadioService"
+        remote="github_ant-wireless"
+        revision="refs/heads/master"
+        />
 
-  <project name="Android_ANTPlusPluginsService"
-           path="external/ant-wireless/Android_ANTPlusPluginsService"
-           remote="github_ant-wireless"
-           revision="refs/heads/master"
-           />
+    <project name="Android_ANTPlusPluginsService"
+        path="external/ant-wireless/Android_ANTPlusPluginsService"
+        remote="github_ant-wireless"
+        revision="refs/heads/master"
+        />
 
 </manifest>
