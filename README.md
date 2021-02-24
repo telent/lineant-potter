@@ -13,11 +13,24 @@ build a degoogled phone with ANT+ enabled:
 - ANT patches and libraries
 - ANT Tester app
 
-It depends on the [Docker image](https://github.com/lineageos4microg/docker-lineage-cicd)
-created by the [microG Project](https://lineage.microg.org/) so you'll
-need Docker to build it
+It works on phones that originally had Nougat (7.0) - it won't work if
+your stock ROM was Oreo (8.1). The LineageOS release it's based on
+predates stock Oreo, and something changed in the firmware (maybe
+related to Treble) between those two versions.  I don't know how to
+build a Lineageos 15.1 that works properly with the newer firmware,
+but I would gratefully take advice or patches.
+
+(You can, if you dare, flash the older firmware on your phone before
+you flash this ROM.  I followed the procedure at
+https://forum.xda-developers.com/t/nougat-stock-rom-twrp-flashable-stock-builds.3813351/
+and nothing exploded, but don't take that as a recommendation)
+
 
 # Usage
+
+It depends on the [Docker image](https://github.com/lineageos4microg/docker-lineage-cicd)
+created by the [microG Project](https://lineage.microg.org/) so you'll
+need Docker to build it. 
 
     $ bash build.sh
 
